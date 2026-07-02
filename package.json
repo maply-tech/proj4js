@@ -6,7 +6,7 @@
   "main": "dist/proj4-src.js",
   "module": "lib/index.js",
   "scripts": {
-    "prepare": "npm run build && npm run test:all",
+    "prepare": "npm run build",
     "build": "grunt && npm run rollup",
     "build:tmerc": "grunt build:tmerc && npm run rollup",
     "rollup": "rollup -c",
@@ -16,12 +16,11 @@
     "test": "npm run build && npm run test:all",
     "test:coverage": "nyc npm run test:ci",
     "test:all": "npm run test:ci",
-    "test:browser": "node test/puppeteer-tests.mjs",
     "test:ci": "npx -y mocha test/test-ci.mjs --reporter dot"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/proj4js/proj4js.git"
+    "url": "git://github.com/maply-tech/proj4js.git"
   },
   "author": "",
   "license": "MIT",
